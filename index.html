@@ -17,75 +17,82 @@
 <body>
     <div class="caixa-superior">
         <div class="cabecalho">
-            <h2 class="titulo-cabecalho">Dev Contábil</h2>
-            <a href="" class="link-cabecalho">Quem Somos</a>
-            <a href="" class="link-cabecalho">Serviços</a>
-            <a href="" class="link-cabecalho">Contato</a>
+            <h2 class="titulo-cabecalho">Joãozinho Contábilidade</h2>
+            <a href="#titulo-final" class="link-cabecalho-1">Sobre Nós</a>
+            <a href="#titulo-meio" class="link-cabecalho">Serviços</a>
+            <a class="link-cabecalho" onclick="contato()">Contato</a>
         </div>
 
-        <H1>Dev Contábil</H1>
+        <H1>Joãozinho Contábil</H1>
+        <p class="sub-h1">Sua maneira mais inteligênte e econômica <br> de resolver sua estruturação tributária/contábil <br> e outros fins, é com agente. </p>
 
-        <form action="">
+        <form id="formulario-contato" action="https://formsubmit.co/programando.so@gmail.com" method="POST">
 
             <h3 class="titulo-formulario">Entre em Contato</h3>
             <label for="">
                 Nome
-                <input type="text" placeholder="Seu nome">
+                <input type="text" name="nome" placeholder="seu nome" required>
             </label>
 
             <label for="">
                 E-mail
-                <input type="text" placeholder=" e-mail exemplo@gmail">
+                <input type="email" name="e-mail" placeholder="  exemplo@gmail.com" required>
             </label>
 
             <label for="">
-                Fale conosco
-                <textarea name="" id="" cols="30" rows="10" placeholder="Tire suas dúvidas"></textarea>
+                WhatsApp
+                <input type="tel" name="telefone" placeholder=" (DDD) xxxxx -xxxx" required>
             </label>
-            <button>Enviar</button>
+
+
+            <label for="">
+                Fale conosco
+                <textarea name="info" id="" cols="30" rows="10" placeholder="Tire suas dúvidas"></textarea>
+            </label>
+            <button type="submit">Enviar</button>
 
         </form>
     </div>
-    <h2 class="titulo-meio">Nossos Serviços</h2>
+    <h2 id="titulo-meio">Nossos Serviços</h2>
     <div class="caixa-central">
        
 
         <div class="card">
             <h3 class="titulo-card">Contabilidade Completa</h3>
             <ul>
-                <li>primeiro item</li>
-                <li>segundo item</li>
-                <li>terceiro item</li>
-                <li>quarto item</li>
-                <li>quinto item</li>
+                <li>Balancetes</li>
+                <li>Abertura de Empresas</li>
+                <li>Planejamento Tributário</li>
+                <li>Assessoria Gestão Financeira</li>
+                <li>Assessoria Trabalitas</li>
             </ul>
         </div>
 
         <div class="card">
             <h3 class="titulo-card">Cuidando do seu Negórcio</h3>
             <ul>
-                <li>primeiro item</li>
-                <li>segundo item</li>
-                <li>terceiro item</li>
-                <li>quarto item</li>
-                <li>quinto item</li>
+                <li>Prestamos Consultoria</li>
+                <li>Administração de Tributos</li>
+                <li>Planejamento de Rotinas</li>
+                <li>Estruturação Contabíl</li>
+                <li>Joãozinho Pé de Feijão</li>
             </ul>
         </div>
 
         <div class="card">
             <h3 class="titulo-card">Cuidando de você</h3>
             <ul>
-                <li>primeiro item</li>
-                <li>segundo item</li>
-                <li>terceiro item</li>
-                <li>quarto item</li>
-                <li>quinto item</li>
+                <li>Consultoria Prime</li>
+                <li>Declaração de Imposto</li>
+                <li>Emisão de Certidões</li>
+                <li>Encerramento de Empresa</li>
+                <li>Joãozinho Pé de Feijão</li>
             </ul>
         </div>
     </div>
 
     <div class="caixa-final">
-        <h2 class="titulo-final">Sobre Nós</h2>
+        <h2 id="titulo-final">Sobre Nós</h2>
         <p>Estamos presente no mercado há mais de 4 décadas auxiliando nossos clientes nacionais e internacionais que já
             atuam ou desejam abrir seus negócios e ingressar no Brasil.<br>
 
@@ -102,6 +109,17 @@
             sugerindo incorporação ou desmembramento de atividades.<br>
         </p>
     </div>
+  
+  
+
 </body>
+<script>
+    let formulario = document.getElementById("formulario-contato");
+    
+
+    function contato(){
+       formulario.className = "mostrar-formulario"
+    }
+</script>
 
 </html>

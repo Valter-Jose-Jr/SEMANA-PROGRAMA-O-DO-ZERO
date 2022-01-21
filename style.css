@@ -15,7 +15,8 @@
 }
 .caixa-superior {
     background-image:url("./dev.png");
-    height: 95vh;   
+    background-size: cover;
+    height: 100vh;   
 }
 .cabecalho {
     padding-top: 38px;
@@ -25,16 +26,42 @@
 
 .titulo-cabecalho{
     color:#ffff;
-     font-size: 24px;
+     font-size: 30px;
      display: inline;
+     margin-right: 20vw;
     
 }
+.titulo-cabecalho:hover {
+    color:#2e408a!important;
+          
+    }
+
+    .link-cabecalho-1 {
+        
+        font-size: 16px;
+        display: inline;
+        color: #ffff;
+        text-decoration: none;
+    }
+    .link-cabecalho-1:hover {
+        color:#2e408a!important;
+       
+}
+
+
+
 .link-cabecalho {
-    font-size: 14px;
+    font-size: 16px;
     color: #ffff;
     display: inline;
-    margin-left: 30px;
+    text-decoration: none;
+    margin-left: 35px;
     cursor: pointer;
+}
+
+.link-cabecalho:hover {
+    color:#2e408a!important;
+
 }
 h1 {
     font-size: 55px;
@@ -43,26 +70,47 @@ h1 {
     top: 320px;
     margin-left: 25px;
 }
+.sub-h1 {
+    font-size: 20px;
+    font-weight: 400;
+
+    color: #ffff;
+    position: relative;
+    top: 320px;
+    padding-left: 25px;
+   
+    
+}
 
 .titulo-formulario {
-    font-size: 18px;
-    color: #252B42;
+    font-size: 20px;
+    color: #2e408a;
     margin-bottom: 25px;
     text-align: center;
+    
    
    
 }
 
 form {
-    background-color: #ffff;
+    opacity: 0;
+    transition: opacity 1s linear;
+    background-color: #fff;
     border-radius: 5px;
     float: right;
     padding: 15px;
-    margin-right: 80px;
+    margin-right: 50px;
     position: relative;
-    bottom: 50px;
+    bottom: 70px;
+    
 
 }
+
+.mostrar-formulario {
+    opacity: 1;
+
+}
+
 input {
     display: block;
     background:#F9F9F9; 
@@ -89,7 +137,7 @@ textarea {
 }
 label {
     font-size: 14px;
-    color:#252B42;
+    color:#2e408a;
     
 }
 button {
@@ -101,10 +149,10 @@ button {
     background-color:#40BB15 ;
     color: #ffff;
 }
-.titulo-meio {
+#titulo-meio {
     font-size: 35px;
     text-align: center;
-    margin: 15px 0px 30px 0px;
+    margin: 40px 0px 30px 0px;
 
 }
 .card {
@@ -114,19 +162,19 @@ button {
     border: 1px solid #A9D6FF;
 }
 .titulo-card {
-    background:  #219653;
+    background:  #2e408a;
     color: #ffff;
     text-align: center;
     padding: 15px;
     border-radius: 10px 10px 0 0;
 }
 ul {
-    padding: 50px;;
+    padding: 35px;;
     
 }
-}
+
 li {
-   margin-bottom: 5px;
+   margin-bottom: 10px;
    margin-left: 10px;
    
 }
@@ -135,16 +183,18 @@ li {
     justify-content: space-evenly;
     margin-bottom: 40px;
 }
-.titulo-final {
+#titulo-final {
     text-align: center;
+    font-size: 40px;
     margin-bottom: 20px;
     color: #ffff;
+    margin-right: 47%;
 }
 .caixa-final {
     
    padding: 50px 0px 50px 0px;
     
-    background: #252B42;
+    background: #2e408a;
    color: #ffff;
 }
 p {
@@ -154,8 +204,32 @@ p {
    padding-left: 250px;
   padding-right: 250px;
    
+}
+
+ #informações {
+   font-size: 18px;
+    display: inline;
+    color: #2e408a;
+    font-weight:700;
+}
+
+.link-rodape {
     
-   
-    
+    font-size: 15px;
+    color: #2e408a;
+    background-color: #ffff;
+    border-radius: 3px;
+    padding: 4px;
+    display: inline;
+    margin-right: 5vw;
+    cursor: pointer;
+  text-decoration: none;
+  font-weight:700;
+
+}
+.link-rodape:hover {
+    background-color:#2e408a; 
+    color:#ffff;
+
 }
    
